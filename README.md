@@ -24,9 +24,10 @@ npm install
 - Script3: Deploy the GovernorDAO contract
 - Script4: 
   - Will set the appropriate executor and proposor 
-  - Proposor is set to be GovernorDAO address because we usually interacr with Governor contract only for creating the proposal
+  - Proposor is set to be GovernorDAO address for now, other EOA addresses could also be added in future
+  - Executor is set to be the deployer address, further address could also be added in future
   - Can only be set by the Admin
 - Script5: Deploy the simple target contract, the proposal will be raised to made changes into this contract
 - Script6: Create proposal and log the proposalId in the proposal.json file
 - Script7: Vote on the proposal with the help of the proposalId
-- Script8: Queue the proposal if voting is successful and then after waitin for the minimum delay execute the proposal
+- Script8: Queue the proposal if voting is successful and then after waiting for the minimum delay execute the proposal
