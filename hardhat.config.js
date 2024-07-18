@@ -1,5 +1,5 @@
 require("@nomicfoundation/hardhat-toolbox");
-//require('@nomiclabs/hardhat-waffle')
+require('@nomicfoundation/hardhat-verify')
 //require("@nomiclabs/hardhat-etherscan");
 require('dotenv').config()
 
@@ -26,9 +26,9 @@ module.exports = {
       accounts:[process.env.PRIVATE_KEY]
     },
   },
-//   etherscan: {
-//     apiKey: {
-//       sepolia: `73F5A1QSPD7WDFXF39IB3F13NTDCZ16V5Y`,
-//     }
-//   }
+  etherscan: {
+    apiKey: {
+      sepolia: `73F5A1QSPD7WDFXF39IB3F13NTDCZ16V5Y`,
+    }
+  }
 }
