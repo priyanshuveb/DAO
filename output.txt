@@ -1,0 +1,13 @@
+script 1
+PlutoToken deployed: 0x220Bf7f0230efe1e2EFD7d5bdcD681B2676F93a3
+Delegating to the deployer: 0xC6ad6C00877a05a0ac1BBD456e31792c6b561F8D
+
+script 2
+Timelock deployed: 0xEF7bB1927fA98Db49DC48FD3C725dbC25993bCE4
+
+script 3
+governor deployed: 0xd25316b9b5f1a31d221990eddbb4c8e84f6b9d80
+
+script 5
+Storage deployed: 0x3cAd2cBf262e4D6F647B538452F088844557604D
+

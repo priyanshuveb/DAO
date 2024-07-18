@@ -21,7 +21,8 @@
     "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers@^0.4.2",
     "dotenv": "^16.4.5",
     "ethers": "^6.13.1",
-    "hardhat": "^2.22.6"
+    "fs": "^0.0.1-security",
+    "hardhat": "^2.4.1"
   },
   "dependencies": {
     "@nomiclabs/hardhat-etherscan": "^3.1.8",

@@ -11,14 +11,15 @@ async function main() {
 
   const Token = await ethers.getContractFactory('PlutoToken')
   const token = await Token.deploy()
-  await token.deployed()
-  console.log('PlutoToken deployed:', token.address)
+  await token.waitForDeployment()
+  const tokenAddress = await token.getAddress()
+  console.log('PlutoToken deployed:', tokenAddress)
 
   // Delegating
 
   console.log(`Delegating to the deployer: ${deployer.address}`);
 
-  const governanceToken = await ethers.getContractAt("PlutoToken", token.address)
+  const governanceToken = await ethers.getContractAt("PlutoToken", tokenAddress)
   const tx = await governanceToken.delegate(deployer.address)
   await tx.wait(1)
 

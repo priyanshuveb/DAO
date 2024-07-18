@@ -16,11 +16,12 @@ module.exports = {
   settings: {
     optimizer: {
       enabled: true,
-      runs: 400
+      runs: 100
     }
   },
   networks:{
     sepolia: {
+      chainId: 11155111,
       url:`https://eth-sepolia.g.alchemy.com/v2/Af6daGPIu82mzt2qbc5RLcnFUXIDgpc4`,
       accounts:[process.env.PRIVATE_KEY]
     },
