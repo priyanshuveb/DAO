@@ -31,3 +31,10 @@ npm install
 - Script6: Create proposal and log the proposalId in the proposal.json file
 - Script7: Vote on the proposal with the help of the proposalId
 - Script8: Queue the proposal if voting is successful and then after waiting for the minimum delay execute the proposal
+
+### Deployments on sepolia network
+- Governance Token: 0x220Bf7f0230efe1e2EFD7d5bdcD681B2676F93a3
+- TimeLock: 0xEF7bB1927fA98Db49DC48FD3C725dbC25993bCE4
+- GovernorDAO: 0xd25316b9b5f1a31d221990eddbb4c8e84f6b9d80
+- Storage: 0x3cAd2cBf262e4D6F647B538452F088844557604D
+
