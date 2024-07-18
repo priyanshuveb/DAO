@@ -10,7 +10,7 @@ async function main() {
   const governor = await ethers.getContractAt("GovernorDAO",GOVERNOR_DAO_ADDRESS)
 
   const storage = await ethers.getContractAt("Storage", STORAGE_ADDRESS)
-  const encodedFunctionCall = storage.interface.encodeFunctionData(FUNC, [89])
+  const encodedFunctionCall = storage.interface.encodeFunctionData(FUNC, [NEW_VALUE])
 
   const proposeTx = await governor.propose(
     [STORAGE_ADDRESS],
@@ -33,7 +33,7 @@ async function main() {
   console.log(`Current Proposal Deadline: ${proposalDeadline}`)
 
   // save the proposalId
-  storeProposalId('106654846220823311994020443933127844076226771055459396102591939065238623302943');
+  storeProposalId(proposalId);
 
 }
 function storeProposalId(proposalId) {
