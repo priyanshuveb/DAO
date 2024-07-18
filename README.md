@@ -17,7 +17,7 @@ npm install
 - Proposor: GovernorDAO Contract
 
 ### Scripts
-- Scipt1:
+- Script1:
   - Will deploy the token compatible with DAO votes
   - Delegate the votes so that they can be used for voting
 - Script2: Deploy the Timelock contract
